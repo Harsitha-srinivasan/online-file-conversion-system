@@ -1,0 +1,82 @@
+[
+  {
+    "_id": "eq86m0jfd",
+    "username": "harsita",
+    "email": "hasitasrinivasan@gmail.com",
+    "password": "$2b$10$v6wtl4.2l0XpYHJqKJE2EOw1FNVlYlphuiP0l0Ca8e.0bv29c3LBS",
+    "role": "user",
+    "createdAt": 1770791401295
+  },
+  {
+    "_id": "klpw17qbt",
+    "username": "harsita",
+    "email": "harsitasrinivasan@gmail.com",
+    "password": "$2b$10$3cZ9vXQqoTV52yK3njhHq.bvRLWkXwCzsZirfLxjNilipGiDYszeW",
+    "role": "user",
+    "createdAt": 1770791939119
+  },
+  {
+    "_id": "n0pj93v7r",
+    "username": "TestUser",
+    "email": "test1770792306261@example.com",
+    "password": "$2b$10$nCvp3BhV1mPizQ7X5RobU.Bx2Etaz90rNeT7FiQ16lkFHGF/wH91.",
+    "role": "user",
+    "createdAt": 1770792306322
+  },
+  {
+    "_id": "h474hsh7e",
+    "username": "harsita",
+    "email": "harsitasrinivasan@gmail.com",
+    "password": "$2b$10$XyS2OfVu26rcPaHt8ApbUut4wlaXyrco.j6fnB5jL1tVffr1mk1em",
+    "role": "user",
+    "createdAt": 1770792568643
+  },
+  {
+    "_id": "7v9x1sc4n",
+    "username": "TestUser",
+    "email": "test1770798718222@example.com",
+    "password": "$2b$10$t6IFKyeB8qfxnagyDoKoDOBXCKQNZ0tDd.Lsj73YTO3udkPiQ/FHe",
+    "role": "user",
+    "createdAt": 1770798718288
+  },
+  {
+    "_id": "7p1nghw4s",
+    "username": "TestUser",
+    "email": "test1770799345237@example.com",
+    "password": "$2b$10$kqX80TYrKvvLyEcs7bgIT.bTN4XQIhQXLQM5XF7cojB86RPFkuWpa",
+    "role": "user",
+    "createdAt": 1770799345331
+  },
+  {
+    "_id": "egkuazqac",
+    "username": "TestUser",
+    "email": "test1770799439677@example.com",
+    "password": "$2b$10$cZuyiS8mhTaTsXbRdzj7Jeu7Do679/UAnEiNjJCryXbhTpqNoncPi",
+    "role": "user",
+    "createdAt": 1770799439764
+  },
+  {
+    "_id": "spkzpmdgd",
+    "username": "harsh",
+    "email": "harsita.cb23@bitsathy.ac.in",
+    "password": "$2b$10$dI0UtKjZ4lVCnAW.92ItUOnOX/KPTgt4oH6cVPyYUyCZyjsPE1w6.",
+    "role": "user",
+    "createdAt": 1770799612570
+  },
+  {
+    "_id": "0ljce312p",
+    "username": "harsita ",
+    "email": "harsita.cb23@bitsathy.ac.in",
+    "password": "$2b$10$nzYCb9tV84i6.tQAwTLql.Byt5d.7tMvqpS1cJdfx9yGM/HDA4abO",
+    "role": "user",
+    "createdAt": 1770804983441
+  },
+  {
+    "_id": "399062j61",
+    "username": "harsita",
+    "email": "harsitasrinivasan@gmail.com",
+    "password": "$2b$10$bnrEY9tw3sSz3jBLmjYJhu5AfvFnJBfyVsC5MTDgXCHJMU3LGbzTq",
+    "role": "user",
+    "createdAt": 1770805196108
+  }
+]

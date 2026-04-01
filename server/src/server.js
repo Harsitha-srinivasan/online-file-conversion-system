@@ -8,42 +8,49 @@ const connectDB = require('./config/db');
 // Load env vars
 dotenv.config();
 
-// Connect to database
-connectDB();
+const startServer = async () => {
+    // Connect to database
+    await connectDB();
 
-const app = express();
+    const app = express();
 
-// Middleware
-app.use(express.json()); // Body parser
-app.use(cors()); // Enable CORS
-app.use(helmet()); // Set security headers
-app.use(morgan('dev')); // Request logging
-app.use('/uploads', express.static('uploads'));
-app.use('/converted', express.static('converted'));
+    // Middleware
+    app.use(express.json()); // Body parser
+    app.use(cors()); // Enable CORS
+    app.use(helmet()); // Set security headers
+    app.use(morgan('dev')); // Request logging
+    app.use('/uploads', express.static('uploads'));
+    // app.use('/converted', express.static('converted')); // Moved to controller for payment checks
 
-// Basic route
-app.get('/', (req, res) => {
-    res.json({ message: 'Online File Conversion API is running' });
-});
-
-// Routes placeholders
-app.use('/api/auth', require('./routes/authRoutes'));
-app.use('/api/files', require('./routes/fileRoutes'));
-app.use('/api/convert', require('./routes/conversionRoutes'));
-app.use('/api/history', require('./routes/historyRoutes'));
-app.use('/api/admin', require('./routes/adminRoutes'));
-
-// Error handling middleware
-app.use((err, req, res, next) => {
-    console.error(err.stack);
-    res.status(500).json({
-        success: false,
-        error: 'Server Error'
+    // Basic route
+    app.get('/', (req, res) => {
+        res.json({ message: 'Online File Conversion API is running' });
     });
-});
 
-const PORT = process.env.PORT || 5000;
+    // Routes placeholders
+    app.use('/api/auth', require('./routes/authRoutes'));
+    app.use('/api/files', require('./routes/fileRoutes'));
+    app.use('/api/convert', require('./routes/conversionRoutes'));
+    app.use('/api/conversion', require('./routes/conversionRoutes'));
+    app.use('/api/history', require('./routes/historyRoutes'));
+    app.use('/api/admin', require('./routes/adminRoutes'));
+    app.use('/api/invoices', require('./routes/invoiceRoutes'));
 
-app.listen(PORT, () => {
-    console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`);
-});
+    // Error handling middleware
+    app.use((err, req, res, next) => {
+        console.error(err.stack);
+        res.status(500).json({
+            success: false,
+            error: 'Server Error'
+        });
+    });
+
+    const PORT = process.env.PORT || 5000;
+
+    app.listen(PORT, () => {
+        console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`);
+    });
+};
+
+startServer();
+

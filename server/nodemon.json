@@ -1,0 +1,5 @@
+{
+  "watch": ["src"],
+  "ignore": ["verify_fix.js", "test_invoice.pdf", "converted/*", "uploads/*", "*.js"],
+  "ext": "js,json"
+}

@@ -1,0 +1,223 @@
+1
+Assignment series 112 Assignment code cs 1
+IBM Looks to capitalize on untapped cloud opportunity
+ASSIGNMENT CODE 112
+DEPARTMENT OF COMPUTER SCIENCE AND BUSINESS SYSTEM
+NAME: HARSITA S
+ROLL NO:7376232CB122
+Introduction:
+IBM (International Business Machines) is known for its hardware and software products, including
+computers, servers, storage systems and networking equipment. IBM corporation is a global IT and outsourcing
+company.
+In the digital era, it is common for organizations to have multiple clouds for different and varying
+workloads. Big Blue, which has over several decades watched and led the transformation of the IT industry, is
+now looking to tap into the huge unexplored hybrid cloud market which it believes is the next big opportunity.
+IBM calls this as the chapter 2 of the cloud. While chapter 1 of the cloud was largely about moving a lot of new
+and customers facing application to the cloud, chapter 2 of the c;oud is the US $1.2 trillion hybrid cloud market.
+IBM INDIA:
+IBM INDIA, “cloud 1.0 in India was all about agility, scalability, time and cost savings. As businesses
+started down the path towards digitalization, it assisted them in being more nimble and automating procedures.
+Cloud 2.0 focuses more on leveraging the cloud's potential and the latest developments in digital transformation
+to support businesses in scaling and experiencing exponential growth. Cloud 2.0 focuses on modernization,
+administration, infrastructure, security, governance, and seamless integration, building on the agility and cost
+reductions provided by Cloud 1.0. India is leading the way in cloud adoption, with enterprises understanding its
+potential to help optimize current business systems, re-architect them, modernize them, and provide new
+business services at previously unthinkable speeds and levels of innovation.
+Bajwa claims that IBM has positioned itself advantageously in the increasingly profitable hybrid cloud industry
+thanks to his company's approach of customising goods and services to customers' requests rather than what
+suppliers are attempting to offer. According to him, "We are always improving our cloud platform to make it
+easier for businesses to connect to the cloud by meeting their needs at every stage of the process, from speeding
+up the migration of current workloads to the cloud to modernising and expanding current apps to providing the
+necessary tools to create cloud-native apps from the ground up." Thanks to this tactic, IBM Cloud is now the
+entry point for blockchain, IoT, AI, and even cutting-edge technologies like quantum computing.
+
+-- 1 of 7 --
+
+2
+The market for hybrid clouds is enormous
+because it allows IBM to have a presence in
+several domains. states "The cloud market is
+redefining beyond the public Infrastructure-as-
+a-Service market," says Vikas Arora, vice
+president, IBM Cloud and Cognitive Software,
+IBM India/South Asia.
+FIRST FIVE IBM CLOUD
+PARKS:
+The first five IBM cloud parks focus on
+data, applications, Intergration, automation and
+multicloud management. This assumes
+significance when you look at the fact that
+organisation today are looking at creating a
+single source of data . Natrajan explains the
+benefits of a single integrated architecture using
+the banking industry as an example. "There has
+been a lot of inorganic growth within banks as
+a result of the rapid growth of banks. This has
+led to the creation of data islands, which have a
+domino effect on decision-making quality,
+customer-centricity, and other avenues for
+producing income. The IBM Cloud Pak for
+Integration can assist businesses in managing
+their integration architecture more easily and
+more affordably, as well as in putting up the
+proper organisational models and governance
+procedures to facilitate agile integration.
+
+-- 2 of 7 --
+
+3
+AQUISITION OF RED HAT – A GAME CHANGER:
+Red Hat's open source innovation is now available to a wider spectrum of clients thanks to the purchase,
+which has changed the game. Businesses can get the hybrid cloud solutions they need from IBM and Red Hat,
+which are built on open source technologies like Linux and Kubernetes and give real choice and agility. Bajwa
+explains, "Hybrid multicloud environments will be based on a foundation of 'open' as clients will look at securely
+deploying, running, and managing their mission-critical workloads across on-premises, private, and public cloud
+environment." With the top-ranked Linux operating system and the industry-leading hybrid cloud platform,
+OpenShift, Red Hat is at the core of this. We are in a good position to combine these with IBM's enterprise
+incumbency, scale, and expertise.
+Forrester Consulting was recently hired by IBM as part of developing "Total Economic Impact"
+research, which aims to investigate how customers use products from both businesses simultaneously and the
+resulting impact. These firms implemented a broad range of Red Hat (Red Hat Enterprise Linux, OpenShift, JBoss,
+and professional services) and IBM (IBM Power, IBM Z, IBM Cloud Paks, middleware, and professional
+services) solutions. According to the report, businesses boosted release frequency by up to 10 times, sped up
+development cycles by up to 66%, and cut infrastructure hardware and licencing expenses by as much as 50%.
+With the acquisition of Red Hat, IBM gains a significant edge as open technologies like containers and
+Kubernetes become the common fabric for both creating cloud-native applications and modernising legacy
+programmers. To run on Red Hat OpenShift, for instance, IBM has optimised over 100 items from its vast
+software portfolio. Now that Red Hat OpenShift has been optimised for IBM software and new Cloud Paks,
+organizations may develop mission-critical apps only once and deploy them across all private and public clouds.
+AI POWER:
+IBM aspires to be the nation's face of artificial intelligence. According to Viswanath Ramaswamy
+(Vishy), Director of Systems at IBM South Asia and India, "We are doing to AI what Red Hat did to Linux."
+With Power AI, you may select any AI framework you want. Everybody's AI path is different at this point.
+In support of his argument, Ramaswamy cites the example of IFFCO Tokio General Insurance, which
+analyses the extent of the damage to personal cars using IBM Power9 and the optimized DL frameworks that
+come with Power AI software for image processing. This allows them to create a list of the parts that were
+damaged in the accident and are both repairable and replaceable. In a short while, the evaluation and the price are
+provided to the client, which they have the option to accept or reject. Payment is made immediately to the
+customer's bank account within 15 minutes if the assessment is approved.
+Bibliography:
+IBM Looks to capitalize on untapped cloud opportunity
+https://www.expresscomputer.in/news/ibm-looks-to-capitalise-on-untapped-cloud-opportunity/45449/
+https://www.magzter.com/stories/Computer-Mobile/Express-Computer/IBM-LOOKS-TO-
+CAPITALISE-ON-UNTAPPED-CLOUD-OPPORTUNITY
+
+-- 3 of 7 --
+
+Assignment series 112 Assignment code cs 5
+1
+TATA COMMUNICATIONS AND NVIDIA FORGE PARTNERSHIP TO
+BOOST AI INFRASTRUCTURE IN INDIA
+Assignment code cs 5
+DEPARTMENT OF COMPUTER SCIENCE AND BUSINESS SYSTEM
+NAME: HARSITA S
+ROLL NO: 7376232CB122
+INTRODUCTION:
+Through a content delivery network, Tata Communications provides private line and
+Ethernet services in addition to various support services including transcoding, security, satellite
+teleports, and fiber-based video networks.
+About TATA
+The TATA group of companies headquartered in Mumbai, India. Establish in 1868, it is Indias’s
+largest conglomerate, with products and services-based works. It includes aviation, steel, power,
+chemicals, and information technology which is IT. TATA is also a “trustworthiness that the
+brand has earned is the result of the toil of so many years of keeping all our stakeholders at the
+center of the business, and serving them very well”
+In 2022-23, the revenue of TATA companies, taken togrther, was over $150 billion.
+About NVIDIA
+NVIDIA (NASDAQ: NVDA) has led the way in accelerated computing since its establishment
+in 1993. The company's 1999 creation of the GPU launched the current era of artificial
+intelligence, revolutionized computer graphics, propelled the PC gaming industry, and is driving
+industrial digitalization in a variety of industries. With its data center-scale offerings, NVIDIA is
+now a full-stack computing firm that is revolutionizing the industry.
+This press release contains certain statements about, among other things: NVIDIA's partnership
+with Tata Group and its advantages and consequences; the advantages and consequences of
+NVIDIA's products, services, and technologies, such as the GH200 Grace Hopper Superchip; the
+global generative AI race being fully underway; data centres moving to GPU computing to build
+energy-efficient infrastructure to support the exponential demand for generative AI; NVIDIA's
+partnership with Tata as they expand their cloud infrastructure service with NVIDIA AI
+supercomputing to support the exponential demand of generative AI startups and processing of
+large language models; the impact of AI and machine learning; and Tata Group's presence across
+
+-- 4 of 7 --
+
+Assignment series 112 Assignment code cs 5
+2
+sectors combined with NVIDIA's capabilities are vulnerable to risks and uncertainties that could
+lead to outcomes that differ significantly from initial projections. Significant variables that could
+drastically alter the actual results
+TATA COMMUNICATION:
+A digital ecosystem enables that power today’s fast growing digital economy.
+The company unlocks opportunities for businesses by enabling borderless growth, boosting
+product innovation and customer experience, improving productivity and efficiency, building
+agility, and managing risk. It powers the digital transformation of enterprises worldwide,
+including 300 of the Fortune 500.
+Tata Communications propels the next level of intelligence powered by cloud, mobile, Internet
+of Things (IoT), collaboration, security, and network services. It does this by utilising its
+solutions-oriented approach, tested managed service capabilities, and state-of-the-art
+infrastructure. Approximately 30% of global internet routes, 80% of the world's cloud giants, and
+4 out of 5 mobile customers are connected to businesses through Tata Communications. The
+company's global network, which includes the biggest wholly owned subsea fibre backbone in
+the world and a Tier-1 IP network with connection to more than 190 nations and territories
+
+-- 5 of 7 --
+
+Assignment series 112 Assignment code cs 5
+3
+worldwide, is the foundation of its capabilities. Both the National Stock Exchange and the
+Bombay Stock Exchange list Tata Communications Limited.
+Tata Communications has contributed to India's rich history of internet usage. Enterprise-enabled
+services have been crucial to the nation's adoption of digital services during the last 25 years.
+Connectivity is a vital component of the economy, from transformation to utility. With its
+distinct promise of providing safe, connected digital experiences, Tata Communications is
+dedicated to empowering industry leaders in this New World of Communications.
+The Collaboration:
+With the partnership between Tata Communications and NVIDIA to deliver cutting-edge
+computing infrastructure and platforms for AI development and deployment, India's AI goals are
+given a significant boost. Tata Communications, a top worldwide provider of digital
+infrastructure, and NVIDIA, a market leader in computer graphics processing units (GPUs), have
+announced a strategic relationship that might have a big impact on India's artificial intelligence
+(AI) scene. According to AS Lakshminarayanan, Managing Director and Chief Executive, the
+Tatas would support the government's AI mission by offering researchers and startups AI
+services.
+This collaboration aims to accelerate the development and deployed of AI solution across India
+by providing robust computing infrastructure and platforms. The competition to become the
+global leader in AI is intensifying, and India is aggressively vying for prominence. Businesses
+and academic institutions all throughout the nation are becoming more aware of how AI has the
+ability to completely transform a number of industries, including manufacturing, agriculture,
+healthcare, and finance. But the creation and application of AI solutions necessitate a significant
+amount of processing power, frequently more than conventional central processing units (CPUs)
+can provide. This is where the parallel processing architecture of GPUs comes into play, giving
+them a major advantage.
+GPUs from NVIDIA are well known for their capacity to effectively manage challenging AI
+workloads. Large, complex AI models may be trained and executed with exceptional
+performance thanks to the company's latest generation GPUs, such as the NVIDIA® GH200
+Grace Hopper Superchip.
+
+-- 6 of 7 --
+
+Assignment series 112 Assignment code cs 5
+4
+On the other hand, Tata Communications contributes its experience in creating and overseeing
+reliable international network infrastructure. Their large data centre footprint and fast
+connectivity options will serve as the cornerstone for a dependable and expandable AI cloud
+platform. With the help of this platform, companies and researchers will have access to the
+processing power needed to create and implement cutting-edge artificial intelligence solutions.
+THE PARTNERSHIP:
+Constructing a World-Class AI Supercomputer: The two businesses intend to work together
+to create an AI supercomputer that runs on the next NVIDIA GPUs. This supercomputer will
+serve as a national asset, providing businesses and researchers with unmatched processing
+capacity to address challenging AI problems. Building a Robust AI Cloud Platform: Users will
+be able to remotely access the computing resources required for AI development and deployment
+through the establishment of a sturdy AI cloud platform. By doing away with the requirement for
+pricey on-site infrastructure, this cloud-based method opens AI to a larger spectrum of
+businesses.
+This will provide a talent pool that is ready to use AI's capability for a range of purposes.
+The potential for this partnership to advance India's AI efforts is enormous. Here are a few of the
+anticipated advantages:
+Bibliography:
+https://www.tatacommunications.com/
+https://www.voicendata.com/news/tata-communications-and-nvidia-forge-
+partnership-to-boost-ai-infrastructure-in-india-4493851
+
+-- 7 of 7 --
+

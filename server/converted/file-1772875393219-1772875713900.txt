@@ -1,0 +1,972 @@
+Question Bank C Programming Level - 1
+1. Craft a program that prompts the user to input a student's marks(6 marks).
+The program should then evaluate and print the category of the student's
+performance based on grade as (Grade A to F).
+Percentage >= 95% A
+Percentage >= 85% B
+Percentage >= 75% C
+Percentage >= 65% D
+Percentage >= 45% E
+Percentage < 45% F
+2. Craft a program where users input marks for five subjects Physics,
+Chemistry, Biology, Mathematics, and C
+3. Craft a program where users input marks for five subjects—Physics,
+Chemistry, Biology, Mathematics, and Computer. The program swiftly
+calculates the average and assigns a grade: A, B, C, D, E, or F. Also prints
+the average value in two decimal points.
+Percentage >= 90% A
+Percentage >= 80% B
+Percentage >= 70% C
+Percentage >= 60% D
+Percentage >= 50% E
+Percentage < 50% F
+4. For a calendar application, users input a month number(1-12). The program
+calculates and prints the number of days in the specified month and also
+prints the quadrant that month occurs.
+5. In a date-related application, users input a number (1-7). The program
+efficiently determines and prints the corresponding day of the week. This
+allows users to instantly identify the day associated with a given week
+number within the application. Also, verify whether the day is a weekday or
+a holiday.
+
+-- 1 of 32 --
+
+6. Craft a program that prompts the user to input the number of steps they took
+in a day and time(in minutes) taken for the activity. The program should then
+categorize their fitness level.
+7. Your task is to develop a program that prompts the user to input the number
+of hours worked by an employee in a week and their hourly wage rate. The
+program should then calculate the total salary of the employee according to
+the following conditions:
+For first 8 hours , if male wage will be Rs.80 per hour
+If female wage will be Rs.60 per hour.
+If more than 8 hours, each extra hour(after the first 8 hour) will be paid with
+Rs.100 per hour.
+8. Craft a program that prompts the user to input two integers. The program
+should then check whether both the inputs are equal or not using bitwise
+operators.
+9. You are tasked with creating a simple menu-driven calculator. The program
+should display a menu with options for basic arithmetic operations: addition,
+subtraction, multiplication, and division.
+10.Your task is to create a program that prompts users to input their age. Based
+on their age, the program will suggest suitable food options tailored to their
+age group. The program should adhere to the following guidelines:
+1. Prompt the user to input their age.
+2. Use if-else statements to categorise users into specific age groups.
+3. Provide food recommendations based on each age group. For
+example:
+● For children aged 5 and below, suggest mashed vegetables or
+soft fruits.
+● For teenagers aged 13 to 18, suggest burgers or pasta.
+● For adults aged 51 and above, suggest soup or grilled fish.
+4. Ensure that the program handles all possible age ranges and provides
+appropriate food suggestions for each category.
+
+-- 2 of 32 --
+
+5. Display the recommended food options to the user based on their age
+group.
+6. Implement error handling to address any invalid inputs, such as
+negative ages or non-numeric entries.
+11.The goal of the program is to take user input for a month number and, based
+on the input, display the name of the month and the number of days it has. If
+the user inputs the month as February (month number 2), the program should
+also ask for the year, perform a leap year calculation, and display the
+appropriate number of days, and print .
+12.Craft a program that prompts the user to enter a number. The program
+should analyse the number and display whether it is positive, negative, or
+zero.
+13.Your task is to create a program that prompts users to input their age. Based
+on their age, the program will suggest suitable food options tailored to their
+age group. The program should adhere to the following guidelines:
+1. Prompt the user to input their age.
+2. Use if-else statements to categorise users into specific age groups.
+3. Provide food recommendations based on each age group. For
+example:
+● For children aged 5 and below, suggest mashed vegetables or
+soft fruits.
+● For teenagers aged 13 to 18, suggest burgers or pasta.
+● For adults aged 51 and above, suggest soup or grilled fish.
+4. Ensure that the program handles all possible age ranges and provides
+appropriate food suggestions for each category.
+5. Display the recommended food options to the user based on their age
+group.
+6. Implement error handling to address any invalid inputs, such as
+negative ages or non-numeric entries.
+
+-- 3 of 32 --
+
+14.In the world of entertainment, ticket prices vary based on age. Your task is to
+create a program that calculates the ticket price for a movie based on the age
+of the viewer as Children, Teenagers, Adult, Seniors (age 61 and above)
+15.Create a program to calculate if Ram's chocolates will last for the duration
+he plans to eat them, based on input values of total chocolates, consumption
+per day, and planned days. Output 1 if they last, 0 if they run out."
+16.Craft a program that prompts the user to input the quantities of pen,
+notebook and pencils they wish to purchase. The cost per pen is 20 units, the
+cost per notebook is 70 units and the cost per pencil is 9 units .The program
+should then calculate and display the total amount for the shopper.
+17.Your task is to create a program that enables customers to select their
+preferred chocolate flavour from a menu using numeric choices. The
+program should follow these guidelines:
+1. Display a menu of available chocolate flavours, along with
+corresponding numeric choices (e.g., 1. Milk Chocolate, 2. Dark
+Chocolate, 3. White Chocolate).
+2. Prompt the user to input their choice by entering the corresponding
+number.
+3. Use a switch statement to process the user's choice and display a
+message based on the selected flavour:
+● For Milk Chocolate, display a message about its creamy taste.
+● For Dark Chocolate, display a message about its rich flavour.
+● For White Chocolate, display a message about its sweet and
+smooth texture.
+● If the user enters an invalid choice (a number other than 1, 2, or
+3), display an error message.
+4. Ensure the program provides a user-friendly experience and handles
+invalid inputs gracefully.
+5. Upon receiving the user's selection, display a message confirming
+their choice and encouraging them to enjoy their selected chocolate
+flavor.
+
+-- 4 of 32 --
+
+18. Your task is to create a C program that prompts users to input the number of
+symptoms experienced by a patient. The program will then assess the
+severity of the patient's condition and assign a priority level based on the
+following criteria:
+1. Patients experiencing 5 or more symptoms are considered to be in
+critical condition and require immediate attention with high priority.
+2. Patients experiencing 3 or 4 symptoms are considered to be in
+moderate condition and require attention soon with medium priority.
+3. Patients experiencing fewer than 3 symptoms are considered to be in
+stable condition and can wait for a while with low priority.
+4. Implement error handling to ensure that the user enters a valid number
+of symptoms.
+5. Display the assigned priority level to the user based on the severity of
+the patient's symptoms.
+19.The program efficiently calculates the Gross salary, incorporating specific
+allowances based on conditions:
+If Basic Salary is <= 70000: HRA = 30%, DA = 80%
+This ensures immediate and accurate feedback on the employee's Gross
+salary within the application.
+20.An instructor tries to make a connection between the direction and the
+angles written on a circle. Her initial goal is to teach them the relationship
+between the angles that represent East, North, West, and South, respectively.
+To visually represent the direction that corresponds to the angle entered,
+write a program that uses a selection statement.
+21.Write a C program that simulates a stock trading scenario for a novice trader.
+The program should take the initial investment amount, stock purchase
+price, and current stock value as inputs. It should then calculate and display
+the profit or loss based on the fluctuations in the stock's value.
+22.Craft a program that takes the temperature in centigrade as input and outputs
+the corresponding weather message based on the given conditions as
+
+-- 5 of 32 --
+
+Freezing weather, Very Cold weather, Cold weather, Normal temperature,
+Hot,Very hot
+23.Write a program to take input for the employee's salary and gender,
+calculate the bonus based on the given criteria, and display the final salary
+that the employee will receive.
+24. Your task is to create a program that prompts users to input their body
+temperature in Celsius. The program will then analyse the temperature
+provided and determine whether the individual has a fever based on the
+following criteria:
+1. If the body temperature is equal to or greater than 37°C, the program
+will indicate that the individual has a fever.
+2. If the body temperature is below 37°C, the program will indicate that
+the individual does not have a fever.
+3. Ensure the program handles valid input and provides appropriate
+feedback to the user.
+4. Display the result of the fever assessment to the user based on their
+body temperature input.
+25.Craft a program that takes a positive decimal integer as input and transforms
+it into its hexadecimal and octal equivalents.
+26.Implement a C program to determine the agent with the highest priority
+based on their success rate. The agent will be given the highest priority if
+they have a high success rate.
+27.Craft a program that prompts the user to input 2 integer values. Calculate
+their product. If the product is even, divide it by 2 or divide it by 3 and
+display the result.
+28.Develop a program that prompts users for a positive integer, checks if it's a
+perfect square using maths and conditionals, and outputs the result.
+
+-- 6 of 32 --
+
+29. Craft a program that prompts the user to enter the age, annual tuition fee
+and total annual expenses.The program first asks for the user's age.If the age
+falls within the range of 18 to 25, Based on the comparison between the
+tuition fee and total expenses,
+30.Craft a program to check whether a given character is an alphabet or not.
+31.Craft a program that prompts users to input an integer.evaluate whether the
+input number is Even Number or Odd Number.
+32.Develop a program that accepts a character input from the user. The program
+should then determine if the entered character is a vowel or a consonant or
+not a Letter.
+33.Craft a program to determine whether a triangle is valid or not and if the
+triangle is valid then identify the type as Equilateral or Isosceles or Scalene.
+34.Craft a program that prompts the user to input the number of hours worked
+and the hourly rate. It then calculates the total salary based on whether the
+hours worked are within the regular (40 hours) hours or exceed them. If the
+hours worked exceed the regular hours, it calculates the overtime pay for
+each hour exceeding the regular hours at 1.5 times the hourly rate. Finally, it
+displays the total salary.
+35.Your task is to implement a program that calculates compound interest. And
+display the calculated compound interest to the user with precision 2.
+36.Craft a program that takes a user-inputted integer and determines whether it
+is a buzz number or not. The program should use only conditional
+statements.
+37.Craft a program that accepts the height of a person in centimeters as input
+and categorizes them based on their height into one of four categories: short
+,average height, tall , very tall.
+
+-- 7 of 32 --
+
+38. Craft a program that prompts the user to enter the number to be checked
+(num) and the divisor. checks if a given number is divisible by another
+number. Then, it verifies if the divisor is not zero. If it's not zero, it checks if
+the number is divisible by the divisor. Based on the result, it prints whether
+the number is divisible or not. If the divisor is zero, print an error message .
+39.Craft a program that accepts input for a coordinate point and outputs the
+quadrant in which the point lies, or if it lies on the axis or at the origin.
+40.Craft a program that prompts the user to input the speed limit and the speed
+of a vehicle. The program should then determine if the vehicle's speed
+exceeds the speed limit and issue a warning message if it does.
+41.Craft a program that takes input from the user regarding the quantity of
+items purchased and the price per item. It then calculates the total cost of the
+purchase and discounts based on the total cost. Determine discounts based
+on the total cost.
+42.Develop a program that prompts the user to input miles driven and gallons
+used, calculates MPG, and classifies gas mileage. The program should
+output the calculated MPG and its classification as Poor, Average, Good, or
+Excellent based on given ranges.
+43. Craft a program that Takes input for the total score and total overs played by
+the batting team. Calculates the run rate per over and Converts the run rate to
+a percentage. Determines the likelihood of the batting team winning the
+match based on the percentage:
+● If the percentage is less than 50, it predicts that the opponent team can
+win.
+● If the percentage is exactly 50, it predicts that both teams have an
+equal chance of winning.
+● If the percentage is greater than 50, it predicts that the batting team
+can win.
+Print the final output as percentage and prediction.
+
+-- 8 of 32 --
+
+44.Create a program that assesses engine health based on inputted temperature
+(°C), oil pressure (PSI), and RPM. If temperature is above 75°C, oil pressure
+is below 12 PSI, or RPM exceeds 7000, engine health is poor. If temperature
+is above 50°C, oil pressure is below 12 PSI, or RPM exceeds 4000, engine
+health is fair.
+45.Craft a program that calculates the discount amount based on the purchase
+amount. Apply different discount rates for different purchase ranges and
+Display the calculated discount amount.
+46.Craft a program that prompts the user to input the coordinates (x, y, z) of the
+point.Then, it evaluates different conditions to determine the location of the
+point within the Cartesian coordinate system.
+● If all coordinates (x, y, z) are zero, print "origin"
+● If x and y coordinates are zero, print "z-axis"
+● If x and z coordinates are zero, print "y-axis"
+● If y and z coordinates are zero, print "x-axis"
+● If the x coordinate is zero, print " yz-plane"
+47.Create a program to calculate the annual increment of an employee based on
+their performance rating. Assume that the performance rating is on a scale of
+1 to 5, where 1 represents poor performance and 5 represents excellent
+performance.
+48.Design a program that calculates the total cost of tickets for a movie theater.
+The ticket price depends on the age group of the person: Implement an
+additional discount of 11% if the number of tickets purchased is more than 8.
+49.Craft a program that Prompt the user to enter the month (1-12) and select
+their choice.Calculate and display the approximate sunrise and sunset times
+based on the following criteria:
+● For months January, February, October, November, December:
+1) Sunrise: 7:00 AM
+2) Sunset: 5:30 PM
+● For March:
+
+-- 9 of 32 --
+
+1) Sunrise: 6:30 AM
+2) Sunset: 6:30 PM
+● For months April, May, June, July, August:
+1) Sunrise: 5:30 AM
+2) Sunset: 7:30 PM
+● For September:
+1) Sunrise: 6:30 AM
+2) Sunset: 6:00 PM
+50.Write a program to find Get the lion’s age as input. Also the maximum age
+of a lion is 26 years old. Display “Cub, Juvenile, Subadult, Young adult, Old
+adult with two precision .
+51.Craft a program that takes input in the format "DD MM YYYY". Ensure that
+the input for day, month, and year are valid integers within reasonable
+ranges.Based on the input date, calculate the corresponding season.Divide
+the year into four quarters (Jan-Mar, Apr-Jun, Jul-Sep, Oct-Dec).Calculate
+the total number of days passed in the quarter up to the given date.
+Determine the season based on the total number of days passed:
+● Spring: March 1st to May 31st
+● Summer: June 1st to August 31st
+● Autumn: September 1st to November 30th
+● Winter: December 1st to February 28th (or 29th for leap years)
+52.Craft a program that prompts the user to enter two characters.Calculate the
+ASCII values of these characters. Determine the relationship between the
+characters:
+● If both characters are vowels, calculate the sum of their ASCII values.
+● If one character is a vowel and the other is a consonant, calculate the
+difference of their ASCII values.
+● If both characters are consonants, calculate the product of their ASCII
+values.
+53.Implement a BMI calculator that classifies individuals as Underweight,
+Normal weight, Overweight, or Obese (range within 0 to 100).
+
+-- 10 of 32 --
+
+54.Write a program to get 3 inputs from the user. First get the selling price per
+unit. Next the quantity sold. Then The input Of middlemen was used.
+Choose from these middlemen A, B and C who deduct respectively. Find the
+total revenue after deduction by the middlemen. if the middlemen entered is
+A, B, C and print the original amount without deduction
+55.Craft a program starts by prompting the user to input the angle of rotation in
+degrees and the direction of rotation (either clockwise or counterclockwise).
+Then, it asks for the initial x and y coordinates. Using trigonometric
+functions (cosine and sine), the program performs the rotation based on the
+specified angle and direction. Finally, it outputs the new coordinates after
+rotation.
+56.Write a program to get two inputs from the user. If the two inputs are odd,
+then Multiply them and Display the output as a float with 4 decimal places.
+57.Write a program to get a numeric input from the user. Check whether the
+given digit is a 5 digit number or not.
+58.Craft a program that prompts the user to choose a shape (sphere, cube, or
+cylinder) and then calculates and displays the surface area and volume of the
+selected shape based on the provided dimensions.
+59.Write a program to get two sides as input from the user. Check whether the
+inputs belong to square or rectangle and print the result as “Square” or
+“Rectangle” accordingly.
+60.Craft a program should prompt the user to select a shape from the provided
+menu (cone, pyramid, or prism) by entering a corresponding number. After
+the user makes a selection, the program should request the necessary
+dimensions for the chosen shape, such as radius, base area, and height. Once
+the user provides the required dimensions, the program should calculate the
+
+-- 11 of 32 --
+
+volume based on the selected shape and display the result with two decimal
+places.
+61.Craft a program that takes a single character as input and determines
+whether it belongs to the set of vowels or consonants and finally decides if
+the input character is a vowel or a consonant or invalid.
+62.Craft a program prompts the user to input the hour and minute values.It then
+calculates the angle between the hour (24 format) and minute hands based
+on the provided time.The angle is then adjusted to be within the range of 0 to
+360 degrees.If the angle is negative, its absolute value is taken. Finally, the
+program displays the calculated angle.
+63.Write a program that prompts the delivery vehicle operator to input the
+current coordinates (x1, y1) and the destination coordinates (x2, y2). The
+program then calculates and displays the Manhattan distance between the
+current location and the destination address. The Manhattan distance
+between two points (x1, y1) and (x2, y2) in a plane is calculated as the sum
+of the absolute differences of their Cartesian coordinates. Manhattan
+Distance = |x2 - x1| + |y2 - y1|. In other words, it's the distance a taxi would
+travel to get from one point to the other if it's only allowed to move
+horizontally or vertically.
+64.Craft a program that prompts the user to input the base value and the
+exponent value, calculates the result of raising the base to the power of the
+exponent, and then prints the result.
+65.Craft a program that prompts the user to input a frequency in Hertz. Read the
+frequency in integer and print the result as stated below with two decimal
+precision. Categorise the frequency as Infrasound, Audible sound and
+Ultrasound.
+66.Your program should take the lengths of the two sides of the treehouse
+platform (base and height) and the length of the ladder as input. It should
+
+-- 12 of 32 --
+
+then determine whether the lengths of the sides and the ladder form a right
+triangle according to the Pythagorean theorem( c^2 = a^2 + b^2 ).
+67.The class is divided into groups, each consisting of two students. Each group
+is provided with a set of coordinates representing two points on the land
+survey. The students are tasked with calculating the slope between the two
+points using the provided coordinates.
+68.Write a program to get age, gender and height. To get selected in a team a
+person should be either with height greater than or equal to 1.80 metre or
+should be a male with age being 18 or 18+
+69.Develop a program to integrate into the school’s educational software suite.
+The program should convert user-inputted digits to their word
+representations in lowercase (e.g., 0 as "zero", 1 as "one"). It should handle
+negative numbers by informing the user of their negativity.
+70.Develop a program that requests input from users regarding a vehicle's size,
+fuel type, and intended purpose. The program should interpret inputs as
+follows: S for Small, M for Medium, L for Large in terms of size; G for
+Gasoline, D for Diesel, E for Electric for fuel type; and 3 for Personal Use, 1
+for Commercial Use, 2 for Public Transport in terms of purpose. The
+program must validate inputs and provide corresponding information.
+71.Craft a program that prompts the user to input a distance in either
+centimetres or metres. If the distance is greater than 1000, then the input is
+in metres and converts it from metres to kilometres. The program then
+outputs the converted distance accordingly.
+72.Develop a seat booking program that categorises seats as available, reserved,
+or occupied based on a predefined range.
+73.The students gather around their assigned workstations and input the x and y
+coordinates (x1, y1, x2, y2) into their Python program. The program
+
+-- 13 of 32 --
+
+calculates the slope using the formula provided by the instructor: (y2 - y1) /
+(x2 - x1).
+As the students input the coordinates and run the program, they
+observe the output based on the calculated slope:
+● If the slope is positive, they understand that the land surface rises from the
+first point to the second point.
+● If the slope is negative, they realise that the land surface descends from the
+first point to the second point.
+● If the slope is zero, they conclude that the land surface is horizontal between
+the two points.
+● If the denominator is 0, they recognize that the line between the points is
+vertical.
+74.Write a program that takes two integer inputs from the user and swaps their
+values without using a temporary variable. Implement the swapping logic
+using arithmetic operations directly.
+Your program should:
+Prompt the user to enter two integer values.
+Read the input values.
+Swap the values of the two variables using arithmetic operations (addition
+and subtraction).
+Print the updated values of the variables after swapping.
+75.Craft a program that prompts the user to input marks for 5 subjects, ensuring
+that the marks are within the range of 0-100. Marks must be between 0 and
+100." Then, it checks if the student has passed in all subjects (scoring more
+than 35). If passed, it calculates the percentage of the student (displayed to
+two decimal places) and assigns a grade based on the percentage.
+76.A program to determine the status of a battery (low, medium,Almost Full,
+full) based on its charge level in the range (0, 100). The charge level input
+
+-- 14 of 32 --
+
+should be an integer. Handle cases where the input is outside the valid range
+(0-100).
+77.Write a C program that calculates both kinetic and potential energy based on
+user input for mass, velocity, and height.
+Your program should:
+Prompt the user to choose between calculating kinetic or potential energy.
+1. Kinetic energy
+2. Potential energy
+If the user chooses to calculate kinetic energy:
+Prompt the user to enter the mass (in kilograms) and velocity (in meters per
+second).
+Calculate the kinetic energy using the formula: KE = (1/2) * mass *
+velocity^2.
+Display the calculated kinetic energy.
+If the user chooses to calculate potential energy:
+Prompt the user to enter the mass (in kilograms) and height (in metres).
+Calculate the potential energy using the formula: PE = mass * gravity *
+height, where gravity is approximately 9.8 m/s^2.
+78.Create a program that determines an individual's eligibility to vote based on
+their age input, also categorising them into specific age groups such as
+Child, Teenager, Adult, Senior.
+79.Design a program that prompts the user to input a value along with its unit,
+either in kilometres (k) or metres (m). The program should convert the
+entered value to the other unit and display the result with two decimal
+places.
+80.Design a program that accepts an integer input from the user representing
+temperature, and then categorises and prints the weather condition based on
+predefined temperature ranges.
+
+-- 15 of 32 --
+
+81.The textile owner orders the sales team to identify and classify the dress
+according to the size .The size of the dress listed below. So consider the list
+and help to classify it
+82.Design a program that takes two integers, X and Y, from the user. Determine
+whether their sum is even or odd and print the result. Additionally, classify
+the integers as positive, negative, or one of each, and print the appropriate
+statement accordingly.
+83.Write a program that prompts the user to input three integers, that finds and
+displays the largest and smallest numbers among them.
+84.Write a program for checking sight condition of eye (power level is given as
+iput) based on the following conditions:
+1. The given value is 0 then normal.
+2. The given value is negative then print short sightedness
+a. The value is equal to or in between -1 to -4 then print minimum
+b. The value is equal to or in between -5 to -8 then print moderate
+c. The value is equal to or in between -9 to -12 then print high
+d. The value is equal to or in between -13 to -16 then print chronic
+3. The given value is positive then print long sightedness
+e. The value is equal to or in between 1 to 4 then print minimum
+f. The value is equal to or in between 5 to 8 then print moderate
+g. The value is equal to or in between 9 to 12 then print high
+h. The value is equal to or in between 13 to 16 then print chronic
+4.If the value given is more than the framed range then print invalid.
+85.Craft a program that takes an integer 'n' as input and calculates the sum of
+even and odd digits separately. The integer 'n' is guaranteed to have four
+digits and to extract the rightmost digit and then shift the number to the right
+to access the next digit. Repeat this process for all four digits, updating the
+sums based on whether the digit is even or odd.
+
+-- 16 of 32 --
+
+86. The task is to write a program that determines whether Janmansh will be
+able to complete all three assignments on time based on the time he starts
+working on them.
+87.Design a program that prompts the user to input a seat number, determines if
+it's even or odd, and classifies its position in the theatre. If even, it checks if
+divisible by 4 and labels it as back of the theatre if true, otherwise as middle.
+If odd, it checks divisibility by 3 and labels it as back if true, otherwise as
+front.
+88.Craft a program to calculate the total salary for Ninja, who has just received
+a job offer from a reputable company. The program should take inputs of
+Ninja's basic salary and grade, and then compute the total salary based on
+specified allowances and deductions including housing rent allowance
+(HRA), dearness allowance (DA), grade-based allowances, and provident
+fund (PF). Finally, the program should round off the total salary to the
+nearest integer and output the integral part.
+89. Craft a program to determine the minimum number of changes needed to
+make five given integers equal. The program should consider scenarios
+where the integers are already equal, have only one distinct value, two
+distinct values, three distinct values, or four distinct values from 0 to 4.
+90. The task is to write a C program that determines whether a turn is good
+based on the numbers rolled by Chef and Chefina on their dice.
+Requirements:
+1. Prompt the user to input the numbers rolled by Chef and Chefina on
+their respective dice.
+2. Check if the sum of the numbers on the dice is greater than 6.
+3. Output "YES" if the turn is good and "NO" otherwise.
+4. Ensure proper input validation to handle invalid inputs, such as
+non-integer inputs or dice numbers outside the range of 1 to 6.
+91.Develop a program to convert temperatures between Fahrenheit and Celsius
+scales.
+
+-- 17 of 32 --
+
+92. write a C program to calculate the final amount a customer needs to pay
+after applying the discount based on the total amount spent on shopping.
+Requirements:
+1. prompt the user to input the total amount spent by the customer (X).
+2. If X is less than or equal to 100, there is no discount.
+3. If 100 < X ≤ 1000, the discount is 25 rupees.
+4. If 1000 < X ≤ 5000, the discount is 100 rupees.
+5. If X is greater than 5000, the discount is 500 rupees.
+6. Ensure proper input validation to handle invalid inputs, such as
+non-integer inputs or total amounts outside the range of 1 to 10000.
+93.Write a C program that prompts the user to input two characters. The
+program should display the addition of the ASCII value of the entered
+characters.
+94.Design a program that calculates shipping costs for a shipping company
+based on package weight. The program should prompt the user to input the
+weight of the package and categorise it as small, medium, or large. Shipping
+costs are determined by small, medium, and large packages.
+95.The task is to write a C program that takes a number as input and determines
+who takes it home among Alice, Bob, and Charlie based on their
+preferences.
+(Note: Ensure proper input validation to handle invalid inputs, such as
+non-integer inputs or numbers outside the range of 1 to 1000.)
+Requirements:
+1. For each test case, prompt the user to input a number (A).
+2. Check if the number meets Alice's preference criteria:
+3. If the number is even and a multiple of 7, Alice takes it home.
+4. Check if the number meets Bob's preference criteria:
+5. If the number is odd and a multiple of 9, Bob takes it home.
+6. If the number does not meet the criteria for Alice or Bob, Charlie
+takes it home.
+
+-- 18 of 32 --
+
+7. Output the name of the person who takes the number home for each
+test case.
+96. Alice's task is to write a program that takes the lengths of three sides of a
+triangle as input and determines whether the triangle is scalene or not. By
+completing these requirements, Alice will create a reliable program that
+accurately determines whether a given triangle is scalene or not.
+97.Create a program that efficiently identifies the highest score among four
+component scores (two mid-term exam scores, a final exam score, and a
+project score) for each student in a school's grading system.
+98.Design a program to facilitate ticketing for a theme park, automatically
+categorising ticket types based on age. The program should determine
+whether an individual qualifies for a child discount (age 12 or younger), and
+issue regular tickets for ages above 12.
+99.Write a C program that presents a menu to the user to choose a shape (circle,
+rectangle, or triangle). The program should then ask for the necessary
+dimensions based on the user’s choice and calculate the area of the chosen
+shape. The program should print the calculated area with two decimal
+precision.
+100. You are tasked with developing a date validation and incrementation
+module for a project management software. The module should take user
+inputs for day, month, and year and validate whether the date is valid or not.
+If the date is valid, it should increment the date by one day and display the
+updated date.
+101. Write a program that takes the coefficients of a quadratic equation
+ax2+bx+c =0 as input and calculates its roots.
+Prompt the user to input the coefficients a,b and c of the quadratic equation.
+1. If the discriminant is less than 0, print "The roots are imaginary"
+2. If the discriminant is greater than or equal to 0, calculate the roots
+using the quadratic formula: r=(-b±d1)/2*a
+
+-- 19 of 32 --
+
+102. Compute the total points earned using the formula: n + nn + nnn, where n
+is the transaction amount, nn is the transaction amount repeated twice, and
+nnn is the transaction amount repeated thrice. Print the total points earned.
+103. Design a program for an ATM that enforces withdrawal limits based on
+account types. Regular accounts have a withdrawal limit of $300, while
+premium accounts have a limit of $500. If a user exceeds their account's
+limit, they should receive a corresponding message.
+104. Design a program to calculate fines for overdue library books based on
+type and days overdue, charging $70/day for regular books and $150/day for
+reference books. If overdue by more than 77 days, add a $100 extra fine.
+Display the fine amount with two decimal precision and handle invalid
+inputs.
+105. The program calculates a student's attendance percentage based on the
+total hours attended and total hours held in class. It then determines if the
+student is eligible to sit for the exam based on their attendance. If the
+percentage is 75% or higher, the student is allowed to sit for the exam;
+otherwise, they are not allowed. If the percentage is between 66% and 75%,
+they must apply for condonation.
+106. Write a C program to calculate the charge for borrowing books from the
+library based on the number of days borrowed. Your program should prompt
+the user to input the number of days they intend to borrow books. Based on
+this input, calculate the total charge according to the provided fee structure
+and display the result.
+107. Create a program that determines scholarship eligibility based on a
+student's GPA, extracurricular, and technical activities. If the student has a
+GPA of 3.5 or higher and participates in at least 3 extracurricular activities
+and 2 technical activities, they are eligible for the scholarship. Otherwise,
+they are not eligible.
+
+-- 20 of 32 --
+
+108. Create a program to calculate the total rental cost based on the number of
+days, following specific pricing tiers: 2 units per day for 5 days or less, 3
+units per day for 6 to 10 days, 4 units per day for 11 to 15 days, and 5 units
+per day for more than 15 days.
+109. Create a program that prompts participants to enter their age and years of
+coding experience. Based on the given criteria, determine if they are eligible
+for the Junior or Intermediate division. Participants aged 13-18 with 1-3
+years of experience qualify for Junior, while those with more than 3 years
+qualify for Intermediate.
+110. You are tasked with creating a program that checks the validity of a
+triangle based on its side lengths. The program should prompt the user to
+input the lengths of the three sides of the triangle and then determine if the
+triangle is valid or not.
+111. Create a program that determines the discount percentage and total bill
+amount for customers based on their total purchase amount and membership
+status. The program should apply different discount rates according to
+predefined criteria, considering whether the customer is a member or
+non-member.
+112. Create a program that calculates transportation fare based on kilometres
+travelled. Prompt the user to input kilometres covered. Calculate fare
+according to specified conditions: $17 per km for <=10km, $17 per km for
+13-100km, and $5 per km for >100km.
+113. Integrate a C program into a digital clock system to convert 24-hour time
+to 12-hour format with AM/PM indication.
+114. Write a program to swap two integers without using extra space or
+temporary variables. Use bitwise operators to achieve this.
+
+-- 21 of 32 --
+
+115. Create a C program that determines the season based on user input of a
+month (1-12) and day (1-31). The program should output one of four seasons
+(Spring, Summer, Autumn, Winter) corresponding to the given date.
+116. Develop a program to assign bonuses to players based on their chosen
+class. Warriors receive extra strength, Mages gain extra magic power, and
+Rogues are bestowed with extra agility.
+117. Write a C program to calculate saving amount and percentage from total
+income after deducting other allowances. The program should take user
+inputs for total income and other allowances, then display the calculated
+saving amount and percentage.
+118. Write a program that takes an integer input from the user and prints
+"Hey" if the input is divisible by both 8 and 1, "Hi" if divisible by 1, "Wow"
+if divisible by 8, and the input itself if not divisible by either.
+119. Our task is to write a C program that prompts the user to enter a positive
+integer, calculates the sum of natural numbers up to the entered number
+using the sum_of_natural_numbers function, and prints the result. If the user
+enters a non-positive integer, the program should print an error message as
+“enter a positive integer”, and the condition should be less than or equal to
+zero.
+120. You are developing a program to solve linear equations. Users will input
+coefficients 'a' and 'b' for the equation ax + b = 0. The program should
+handle various scenarios: if 'a' is zero and 'b' is zero, indicate infinite
+solutions; if 'a' is zero and 'b' is not zero, indicate no solution.
+121. Craft a program that prompts the user to input a number. The program
+should then determine if the entered number is divisible by both 2 and 6.
+122. Write a program that takes an identification number as input and
+determines whether it is a power of 2.
+
+-- 22 of 32 --
+
+123. Write a C program that takes an integer input from the user representing
+the day of the week (1 for Monday, 2 for Tuesday, …, 7 for Sunday). The
+program should then print the corresponding day of the week.
+124. Design a program to calculate the tax owed based on income levels, with
+varying tax rates depending on income brackets: 7% for incomes below $c,
+15% for incomes between $a and $b valve, and 20% for incomes exceeding.
+125. Craft a program that simulates a traffic light. Implement to take the
+current colour of the traffic light as input and print the corresponding
+message: "stop" for red, "proceed with caution" for yellow, and "Go" for
+Green.
+126. Craft a program that prompts the user to input two numbers and then
+determines which one is greater, lesser, or if they are equal.
+127. Craft a program to calculate and display the new salary of an employee
+based on their current salary and the percentage increment provided to them
+by the company.
+128. Write a program that prompts library members to input the number of
+days they have exceeded the due date for their library books. The program
+should then calculate the total overdue charges based on the number of days
+and the fixed daily charge set by the library.
+129. Design a program where students take turns calling out integers within a
+secret range. Depending on the integer called out, Ms. Li responds with
+'Weird', 'Not Weird', or 'Invalid Input' following the specified conditions.
+130. Create a program that takes a positive integer input from the user and
+analyses its last digit. Depending on whether the last digit is divisible by
+both 2 and 4, only by 2, or none of these, the program should print specific
+patterns.
+
+-- 23 of 32 --
+
+131. Develop a program module for a construction company's salary
+management system to calculate and display daily wages based on the age
+and gender of employees.
+132. Create a program that takes input for electric units consumed and
+calculates the bill based on given rates.
+133. Given the total number of working days and the total number of days
+absent, calculate the percentage of class attended. If the attendance
+percentage is less than 75%, inquire if there is a medical cause (Y/N). If yes,
+display the attendance percentage.
+134. Create a C program for a cola vending machine that sells Colas priced at
+$2 each. Users input the quantity desired and the amount of payment. The
+program checks if the quantity is valid and if there's sufficient stock. It then
+verifies the payment and dispenses the Colas accordingly,
+135. Craft a program that reads a positive integer from the user and calculates
+the sum of its digits.
+136. Craft a program that takes user input to enter the number of subjects and
+the scores for each subject. Calculate the total score by adding the scores of
+all subjects. Then, Calculate the CGPA by dividing the total score by the
+total possible score.
+137. Write a C program that presents a menu to the user to choose a shape
+(circle, rectangle, or triangle). The program should then ask for the
+necessary dimensions based on the user’s choice and calculate the area of the
+chosen shape. The program should print the calculated area.
+138. The task is to write a C program that calculates the sum of the digits of a
+given number. The program should take an integer as input from the user,
+calculate the sum of its digits using a recursive function, and then display the
+result.
+
+-- 24 of 32 --
+
+139. Accept the age, sex (‘M’ , ‘F’ ), number of days and display the wages
+accordingly
+Age 	Gender 	Wage/day
+>=18 and <30 	M 	700
+F 	750
+>=30 and <=40 	M 	800
+F 	850
+If age does not fall in any range then display the following message:
+“Enter appropriate age”
+140. Write a program that Accepts the market price from the user and
+calculate the net amount as (market price-discount) to pay according to the
+following criteria:
+Market Price 	Discount
+>10000 	20%
+>7000 & <=10000 	15%
+>=2000 & <=7000 	10%
+<2000 	No discount
+141. Create a program that categorises temperatures as Very Cold (-20 to 0),
+Cold (1 to 10), Mild (11 to 20), Warm (21 to 30), Hot (31 to 40), Very Hot
+(41 to 50).
+142. Implement a BMI calculator that classifies individuals as Underweight
+(<18.5), Normal weight (18.5-24.9), Overweight (25-29.9), or Obese (30 and
+above).
+
+-- 25 of 32 --
+
+143. Write a program that takes a degree as input and outputs the
+corresponding cardinal direction (North, East, South, West) based on the
+degree range
+144. Implement a weather type identification program that categorises weather
+conditions as Sunny, Cloudy, Rainy, or Stormy based on user input.
+145. Develop a program that classifies triangles as Equilateral, Isosceles, or
+Scalene based on user input of three side lengths.
+146. Create a program that categorises voltage levels as Low (0-50), Medium
+(51-100), High (101-150), or Critical (151 and above).
+147. Implement a program that checks if a vehicle's speed exceeds the speed
+limit and issues a warning if the violation occurs.
+148. Develop a program that calculates and classifies gas mileage as Poor
+(<15 mpg), Average (15-25 mpg), Good (26-35 mpg), or Excellent (36 and
+above).
+149. Create a program that categorises electromagnetic waves into radio
+waves, microwaves, infrared, visible light, ultraviolet, X-rays, or gamma
+rays based on frequency.
+150. Develop a program that diagnoses the health of a car engine based on
+temperature, oil pressure, and RPM within specified ranges.
+151. Create a program that calculates the discount amount based on the
+purchase amount and applies different discount rates for different purchase
+ranges.
+152. Write a C program to determine if a given number is a prime number
+within the range of 100 to 1000.
+
+-- 26 of 32 --
+
+153. You are an HR manager at a prestigious educational institution, and your
+task is to write a Python program to assess the eligibility of faculty members
+for a promotion.The institution has specific criteria, with teaching
+experience being a crucial factor.
+Hint:
+Experience categorization
+AP I – up to 4 ,
+AP II up to 7,
+AP III – up to 10 ,
+ASP –up to 13,
+Professor - up to 20,
+Head - more than 20
+154. Create a C program to decide whether a provided integer is a perfect
+square in the range of 500 to 1000.
+155. Develop a program to verify if a given floating-point number is positive
+and greater than 10.5 but less than 20.3.
+156. Write a C program to check if a user-entered character is an uppercase
+letter within the ASCII range of 65 to 90.
+157. Implement a program to determine whether a user-provided integer is
+divisible by both 7 and 11 in the range of 200 to 500.
+158. Develop a program to ascertain if a given integer is an odd number
+between 300 and 600.
+159. Create a C program to check if a user-inputted decimal is within the
+range of 30.5 to 40.2.
+160. Write a program to determine whether a provided integer is a multiple of
+3 but not a multiple of 5 within the range of 100 to 300
+
+-- 27 of 32 --
+
+161. Implement a C program to check if a given number is a perfect cube in
+the range of 1000 to 2000.
+162. Develop a program to verify if a user-inputted character is a lowercase
+letter within the ASCII range of 97 to 122.
+163. Create a program to decide whether a provided integer is even and
+greater than 150 but less than 300.
+164. Write a program to check if a given floating-point number is negative and
+less than -5.7 within the range of -10.0 to 0.0.
+165. Implement a program to ascertain if a user-entered integer is a power of 2
+within the range of 512 to 1024.
+166. Write a program that takes the initial velocity, time, and acceleration as
+input. Calculate the final velocity using the formula
+final_velocity = initial_velocity + (acceleration * time). Print the final
+velocity as a floating-point number with two decimal places.
+167. Create a program to determine whether a user-provided character is a
+vowel within the ASCII range of 65 to 122.
+168. Write a program that takes three angles of a triangle as input and
+determines the type of triangle. Initially verify whether the given triangle is
+valid or invalid by calculating the sum of angles. If the sum of the angles is
+greater than 180, print "Invalid" otherwise determine the type of triangle
+(Acute, Right, Obtuse).
+169. Craft a program that prompts the user to take the choices of both players
+as input, which is a rock, paper, scissors game. The program output should
+determine the winner using conditional statements and values mentioned
+above(i.e. if the value of the input is greater than 2 is invalid input).
+
+-- 28 of 32 --
+
+170. Develop a program to ascertain if a provided integer is divisible by 4 and
+6 but not by 8 within the range of 200 to 800.
+171. Create a C program to check if a user-inputted decimal is an integer
+within the range of 25.0 to 50.0.
+172. Write a program to check if a given number is a palindrome within the
+range of 1000 to 9999.
+173. Create a program that determines whether a given year is a leap year or
+not, considering the range from 1800 to 2100.
+174. Develop a program to check if a number is multiple of 3, 6 and 9 or not .
+175. Write a program to print the Fibonacci sequence up to the 20th term
+within the range of 0 to 100.
+176. Implement a program to check if a given number is a power of two
+within the range of 1 to 1024.
+177. Create a program to check if a given number is an Armstrong number
+within the range of 100 to 999.
+178. Write a program to calculate and print the factorial of a given number
+within the range of 1 to 10.
+179. Develop a program to check weather the given year is a century or not. If
+century print the resultant year by adding decade to the input.
+180. Implement a program to convert a given character into its equivalent ascii
+value.
+181. Write a program to calculate and display the GCD of two numbers.
+
+-- 29 of 32 --
+
+182. Develop a program to check if the given number is a plaindrome or not .
+Assume the input will be inside the range from 1 to 20.
+183. Write a program to determine the type of triangle (equilateral, isosceles,
+or scalene) based on three given side lengths.
+184. Implement a program to calculate the result of a given base raised to a
+power within the range of 2 to 5.
+185. Craft a program prompts the user to enter the rainfall amount in
+centimetres. After obtaining the rainfall amount in centimetres, the program
+converts it to millimetres by multiplying the input by 10. This conversion is
+based on the fact that 1 centimetre equals 10 millimetres. The result is stored
+in the variable rainfall_mm.
+186. Write a program to solve and display the roots of a quadratic equation
+within the range of -10 to 10.
+187. Create a program to convert a decimal number to its Roman numeral
+representation within the range of 1 to 50.
+188. Implement a program to convert temperatures from Fahrenheit to Celsius
+within the range of 0 to 100.
+189. Develop a program to check if a given character is a valid hexadecimal
+digit (0-9, A-F, a-f) within the ASCII range of 48 to 122.
+190. You are writing a program to determine if a person is eligible for a
+discount at a theme park. If the person is 12 years old or younger, they get a
+child discount; otherwise, they get a regular ticket. Write the if-else
+statement for this scenario.
+191. You are developing a grading system for a school. If a student's score is
+above 90, they get an 'A'; if it's between 80 and 90, they get a 'B'; between
+
+-- 30 of 32 --
+
+70 and 80, they get a 'C'; between 60 and 70, they get a 'D'; and below 60,
+they get an 'F'. Write an if-else statement to assign grades based on the score.
+192. You are developing a game where players can choose a character class. If
+a player chooses "Warrior," they get extra strength; if they choose "Mage,"
+they get extra magic power; if they choose "Rogue," they get extra agility.
+Write an if-else statement to assign the appropriate bonuses based on the
+player's choice.
+193. Develop a program that determines if a given century year is a leap year
+or not based on the divisibility condition.
+194. Ask the user to enter a number that corresponds to a scientific
+measurement.To classify the input according to the following criteria, use
+if-else statements:
+1. A message showing a negative measurement will be displayed if the
+value is less than 0.
+2. Classify the measurement as low positive if it falls between 0 and 10
+(inclusive).
+3. If the value is between 11 and 50 (inclusive), mark it as a moderate
+positive measurement.
+4. The measurement should be classified as strong positive if the value is
+higher than 50.
+5. A message stating a neutral measurement will be displayed if the
+value is precisely 0.
+195. The program should include a well-designed menu, allowing users to
+interactively choose the option for circle area calculation. The user
+experience should be engaging, with clear prompts for input. circle (A)=πr2.
+196. Craft a program that fulfills the requirements of your transportation
+company client. The program should prompt the user to input the start and
+end times of a trip, then calculate and display the duration of the trip in
+hours and minutes.
+
+-- 31 of 32 --
+
+197. You're at a supermarket and are comparing prices of the same product
+across three different brands. You want to quickly determine which brand
+offers the best deal which saves on the monthly grocery bill based on the
+discount
+198. Craft a program that prompts the user to enter two integers, the task is to
+swap their values if X is greater than Y . Then determine if the sum of X and
+Y is even or odd, and ascertain if both values are positive, negative, or one
+of each.
+199. Craft a program that prompts the user to enter an input and that calculates
+the total distance a person travels in a week based on the distance between
+their home and office.The formula calculates the total distance traveled in a
+week for a round trip from home to the office and back to home. The
+distance from home to the office is represented by the variable X.
+Multiplying X by 2 accounts for the round trip (to and from the office).
+200. Craft a program that takes Jerry's speed (X), Tom's speed (Y), and the
+initial distance between them as input, and calculates whether Tom will be
+able to catch Jerry. Consider the scenario where Jerry starts at a different
+position than Tom.The task is to determine whether Tom, with his speed Y
+metres per second, will be able to catch Jerry, who dashes at X meters per
+second. You'll need to calculate the time it takes for Tom to catch Jerry based
+on their speeds and the initial distance between them.
+
+-- 32 of 32 --
+

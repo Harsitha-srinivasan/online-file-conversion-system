@@ -25,6 +25,10 @@ const ConversionHistorySchema = new mongoose.Schema({
     date: {
         type: Date,
         default: Date.now
+    },
+    isPaid: {
+        type: Boolean,
+        default: false
     }
 });
 

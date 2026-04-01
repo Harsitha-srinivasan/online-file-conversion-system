@@ -1,0 +1,144 @@
+Assigment series 110 2024EV035
+ROLE OF MARKET FORCES IN INDIAN ECONOMY
+2024EV0305
+DEPARTMENT OF COMPUTER SCIENCE AND BUSINESS SYSTEM
+HARSITA S,7376232CB122
+1.MARKET BASICS:
+1.1 Market participants:
+Markets consist of various participants, including buyers, sellers and intermediaries.
+Buyers seek goods and services, while sellers offer them. Intermediaries facilitate
+transactions.
+1.2 Supply and Demand:
+The number of products or services that are offered on the market is referred to as supply.
+Production, technology, and resource availability are some of the variables that affect it.
+The desire of consumers for certain goods or services is represented by demand. It is
+contingent upon variables such as population, preferences, and income.
+Prices and quantities exchanged are determined by the interplay between supply and
+demand.
+1.3 Price Mechanism:
+The method by which prices change in response to supply and demand is known as the
+price mechanism.
+On the other hand, low supply results in lower prices.
+This system makes sure that resources are allocated effectively.
+1.4 Competition:
+Efficiency in the market is driven by competition. It motivates businesses to innovate, cut
+expenses, and improve quality.
+When there are several vendors offering comparable goods in a competitive market, buyers
+have options.
+A few large enterprises operating in an oligopoly, or a monopoly can impede competition
+
+-- 1 of 6 --
+
+Assigment series 110 2024EV035
+1.5 Role of Government:
+Although market forces function autonomously, governments step in to correct market
+imperfections.
+Regulation guards against the misuse of market power, guarantees fair play, and safeguards
+consumers.
+Because of inefficiencies in the market, the government provides public goods (such as
+infrastructure and defense).
+1.6 Market Types:
+Markets can be categorized based on the nature of goods:
+Goods Markets:
+Trade tangible goods in goods markets (e.g., cellphones, vehicles).
+Services Markets:
+Trade intangible services, like healthcare and education, on services markets.
+Financial Markets:
+These enable exchanges of money, stocks, bonds, and other financial instruments.
+1.7 Market Equilibrium:
+When supply and demand are equal, equilibrium arises, leading to stable pricing.
+Adjustments result from deviations; higher prices draw in more supply, while lower prices
+draw in less.
+1.8 Consumer Behavior:
+According to utility theory, customers make decisions by maximising their level of
+enjoyment, or utility.
+When making a purchase, consumers take price, quality, and preferences into account.
+1.9 Producer Behavior:
+Producer decisions are based on maximising profits. Businesses want to cut expenses
+while increasing revenue.
+
+-- 2 of 6 --
+
+Assigment series 110 2024EV035
+Production decisions are influenced by variables such as competition, input pricing, and
+technology.
+1.10 Market Failure:
+Even in cases where markets are efficient, government intervention is necessary:
+Externalities: Intentional consequences for other parties (pollution, for example).
+Public goods are non-rivalrous and non-excludable items, such as street lighting.
+Unequal information between buyers and sellers is known as information asymmetry.
+2. SUPPLY AND DEMAND DYNAMICS:
+Markets function as gathering places for the exchange of products and services between buyers
+and sellers. The concepts of supply (the number of commodities available) and demand (the
+desire of consumers for those items) govern these interactions.
+Prices typically decrease when supply outpaces demand, which incentivizes buyers to purchase
+more. On the other hand, when demand exceeds supply, prices increase, and customers start
+looking for alternatives.
+For example, if unfavorable weather causes a crop to become scarce, the crop's price will
+increase. Next, consumers look into alternatives, such as different grains.
+
+-- 3 of 6 --
+
+Assigment series 110 2024EV035
+3.INVISIBLE HAND AND SELF-REGULATION:
+Adam Smith, an economist, popularised the idea of the "invisible hand" in markets. It
+suggests that prices are set by market forces and not by the government.
+Prices dynamically change in response to supply and demand. Corrupt practices and
+bureaucracy are reduced by this self-regulation.
+For instance, when there is an overabundance of rental properties available, prices decline,
+which incentivizes landlords to raise rents until occupancy increases.
+4.RATIONAL SCARCITY:
+A good becomes scarce when it is nearly depleted or becomes limited. When this happens,
+prices are adjusted by market forces. For example: When a commodity becomes scarce (due to
+crop failure, for example), its price increases, which incentivizes consumers to look for
+alternatives.
+Driven by escalating costs, companies investigate novel resources or create alternatives (for
+instance, a shortage of wheat augmenting the need for barley and rice).
+
+-- 4 of 6 --
+
+Assigment series 110 2024EV035
+5. INCENTIVES:
+Businesses have incentives to adjust to shifting demand due to market dynamics.
+Product costs increase as they become more popular (P2).
+An equilibrium is maintained when higher prices encourage businesses to expand their supply
+(S2).
+An illustration of this would be companies investing in lithium mining due to the rising
+demand for lithium batteries.
+6. EFFICIENY:
+Businesses are incentivized by market forces to adjust to shifting demand.
+Prices go up as a product becomes more popular (P2).
+In order to maintain equilibrium, higher prices tell businesses to expand their supply (S2).
+For instance, companies are investing in lithium mining as a result of the rising demand for
+lithium batteries.
+7. LIMITAYION OF MARKETING:
+Public goods are not supplied because there is no financial incentive for businesses to supply
+them, making it difficult for them to charge for them. For example, street lighting is impractical
+due to the question of who would pay for it. Customers could free-ride (enjoy without paying) if
+it is offered. The legal system, law and order, and the preservation of private property are other
+significant public goods that are not supplied by a free market.
+Externalities. A market is efficient at allocating resources if the costs are met by firm and
+consumer. However, many goods and services create external costs to other people in society.
+For example, when you generate coal-powered electricity, there are very substantial costs of
+pollution, global warming – for people around the globe. In a market, this external cost is not
+included in the price and so we get over-consumption of these goods with negative externalities.
+Positive externalities. Similarly, goods which have significant positive externality may be
+under-provided and under-consumed.
+7. CONCLUTION:
+Market forces are dynamic and adaptive, shaping India’s economic trajectory. As the Indian
+economy continues to evolve, understanding and harnessing these forces remain critical for
+sustainable growth
+
+-- 5 of 6 --
+
+Assigment series 110 2024EV035
+BILIOGRAPHY
+https://www.economicshelp.org/blog/167122/economics/role-of-markets/
+Pettinger, Tejvan. “What Is the Role of Markets in an Economy?” Economics Help, 5 November
+2021
+Imarticus. “Role of Financial Markets in the Indian Economy.”
+https://upscsociology.in/analyse-the-role-of-market-and-modern-forces-in-understanding-the-
+changing-trends-in-marriage-systems-in-india/
+
+-- 6 of 6 --
+

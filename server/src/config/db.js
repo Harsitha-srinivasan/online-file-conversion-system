@@ -9,7 +9,10 @@ const connectDB = async () => {
         if (process.env.NODE_ENV === 'development') {
             try {
                 // Try connecting to URI first
-                await mongoose.connect(uri, { serverSelectionTimeoutMS: 2000 });
+                await mongoose.connect(uri, {
+                    serverSelectionTimeoutMS: 2000,
+                    family: 4
+                });
                 console.log(`Real MongoDB Connected`);
             } catch (uriErr) {
                 console.log('Local MongoDB not found, starting MongoMemoryServer...');

@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
-import Layout from '../components/Layout';
 import api from '../services/api';
 import { motion } from 'framer-motion';
-import { FaUsers, FaFileAlt, FaHdd } from 'react-icons/fa';
+import { FaUsers, FaFileAlt, FaHdd, FaShieldAlt } from 'react-icons/fa';
 
 const AdminDashboard = () => {
     const [stats, setStats] = useState(null);
@@ -23,53 +22,70 @@ const AdminDashboard = () => {
     }, []);
 
     return (
-        <Layout>
-            <div className="max-w-4xl mx-auto">
-                <h1 className="text-3xl font-bold mb-8">Admin Dashboard</h1>
+        <div className="max-w-5xl mx-auto px-4 pb-20">
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="mb-12 pt-8"
+            >
+                <div className="inline-flex items-center gap-2 bg-red-500/10 text-red-500 px-4 py-2 rounded-full text-xs font-black uppercase tracking-widest mb-4 border border-red-500/20">
+                    <FaShieldAlt /> Administrator Access
+                </div>
+                <h1 className="text-4xl md:text-5xl font-black mb-3 tracking-tight text-[var(--text-main)]">System Overview</h1>
+                <p className="text-[var(--text-muted)] text-lg max-w-xl">Monitor your application performance, user activity, and storage usage.</p>
+            </motion.div>
 
-                {loading ? (
-                    <p>Loading stats...</p>
-                ) : stats ? (
-                    <div className="grid md:grid-cols-3 gap-6">
-                        <StatsCard
-                            icon={<FaUsers />}
-                            title="Total Users"
-                            value={stats.users}
-                            color="text-blue-400"
-                        />
-                        <StatsCard
-                            icon={<FaFileAlt />}
-                            title="Total Files"
-                            value={stats.files}
-                            color="text-green-400"
-                        />
-                        <StatsCard
-                            icon={<FaHdd />}
-                            title="Storage Used"
-                            value={`${(stats.totalSizeBytes / 1024 / 1024).toFixed(2)} MB`}
-                            color="text-purple-400"
-                        />
-                    </div>
-                ) : (
-                    <p className="text-red-400">Failed to load stats.</p>
-                )}
-            </div>
-        </Layout>
+            {loading ? (
+                <div className="flex flex-col items-center justify-center py-24 gap-4">
+                    <div className="w-12 h-12 border-4 border-slate-200 dark:border-slate-800 border-t-red-500 rounded-full animate-spin"></div>
+                    <p className="text-[var(--text-muted)] font-black uppercase tracking-widest text-xs">Fetching System Stats...</p>
+                </div>
+            ) : stats ? (
+                <div className="grid md:grid-cols-3 gap-8">
+                    <StatsCard
+                        icon={<FaUsers />}
+                        title="Total Users"
+                        value={stats.users}
+                        color="text-indigo-500"
+                        bg="bg-indigo-500/10"
+                    />
+                    <StatsCard
+                        icon={<FaFileAlt />}
+                        title="Total Files"
+                        value={stats.files}
+                        color="text-pink-500"
+                        bg="bg-pink-500/10"
+                    />
+                    <StatsCard
+                        icon={<FaHdd />}
+                        title="Storage Used"
+                        value={`${(stats.totalSizeBytes / 1024 / 1024).toFixed(2)} MB`}
+                        color="text-green-500"
+                        bg="bg-green-500/10"
+                    />
+                </div>
+            ) : (
+                <div className="glass-card p-12 rounded-[32px] text-center border-red-500/20 bg-red-500/5">
+                    <p className="text-red-500 font-bold">Failed to load system statistics.</p>
+                </div>
+            )}
+        </div>
     );
 };
 
-const StatsCard = ({ icon, title, value, color }) => (
+const StatsCard = ({ icon, title, value, color, bg }) => (
     <motion.div
-        initial={{ scale: 0.9, opacity: 0 }}
+        initial={{ scale: 0.95, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
-        className="glass-card p-6 rounded-xl flex items-center gap-4"
+        whileHover={{ y: -5 }}
+        className="glass-card p-10 rounded-[40px] flex flex-col items-center text-center transition-all duration-300"
     >
-        <div className={`text-3xl ${color} bg-slate-800 p-4 rounded-full`}>
+        <div className={`text-4xl ${color} ${bg} w-20 h-20 rounded-3xl flex items-center justify-center mb-8 shadow-inner`}>
             {icon}
         </div>
         <div>
-            <h3 className="text-slate-400 text-sm uppercase font-bold">{title}</h3>
-            <p className="text-3xl font-bold">{value}</p>
+            <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-[var(--text-muted)] mb-2">{title}</h3>
+            <p className="text-4xl font-black text-[var(--text-main)] tracking-tight">{value}</p>
         </div>
     </motion.div>
 );

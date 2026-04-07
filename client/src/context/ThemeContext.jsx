@@ -5,7 +5,12 @@ const ThemeContext = createContext();
 export const useTheme = () => useContext(ThemeContext);
 
 export const ThemeProvider = ({ children }) => {
-    const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
+    const [theme, setTheme] = useState(() => {
+        const stored = localStorage.getItem('theme');
+        // Reset old dark preference → light
+        if (!stored || stored === 'dark') return 'light';
+        return stored;
+    });
 
     useEffect(() => {
         const root = window.document.documentElement;

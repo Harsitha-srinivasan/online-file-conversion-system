@@ -543,10 +543,16 @@ const convertMultiple = async (req, res) => {
             return res.status(400).json({ success: false, error: 'Please select files' });
         }
 
-        const files = await FileRecord.find({ _id: { $in: fileIds }, owner: req.user._id });
-        if (files.length === 0) return res.status(404).json({ success: false, error: 'Files not found' });
+        const filesList = await FileRecord.find({ _id: { $in: fileIds }, owner: req.user._id });
+        if (filesList.length === 0) return res.status(404).json({ success: false, error: 'Files not found' });
 
-        const inputPaths = files.map(f => f.path);
+        // Preserve original order from client request
+        const filesMap = filesList.reduce((acc, f) => ({ ...acc, [f._id.toString()]: f }), {});
+        const orderedFiles = fileIds.map(id => filesMap[id.toString()]).filter(f => !!f);
+        
+        console.log(`convertMultiple: Found ${orderedFiles.length} files out of ${fileIds.length} requested`);
+
+        const inputPaths = orderedFiles.map(f => f.path);
         const outputDir = path.join(__dirname, '../../converted');
         if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
 
@@ -567,7 +573,7 @@ const convertMultiple = async (req, res) => {
         // Log to history
         await ConversionHistory.create({
             userId: req.user._id,
-            originalFileName: files.map(f => f.originalName).join(', '),
+            originalFileName: orderedFiles.map(f => f.originalName).join(', '),
             convertedFileName: outputFilename,
             conversionType: `Images to ${targetFormat.toUpperCase()}`,
             downloadUrl: `/converted/${outputFilename}`

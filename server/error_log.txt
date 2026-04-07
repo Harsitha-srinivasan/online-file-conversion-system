@@ -1,0 +1,6 @@
+TypeError: Class constructors cannot be invoked without 'new'
+    at parsePdfText (C:\Users\ASUS\Desktop\online\server\src\services\conversionService.js:38:28)
+    at convertPdfToPptxFallback (C:\Users\ASUS\Desktop\online\server\src\services\conversionService.js:161:24)
+    at pdf-pptx (C:\Users\ASUS\Desktop\online\server\src\services\conversionService.js:301:19)
+    at async convertFileService (C:\Users\ASUS\Desktop\online\server\src\services\conversionService.js:331:5)
+    at async test (C:\Users\ASUS\Desktop\online\server\test_pdf_to_ppt.js:9:21)

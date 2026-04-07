@@ -10,7 +10,7 @@ import TxtToPdfPage from './pages/TxtToPdfPage';
 import MergePDF from './pages/MergePDF';
 import SplitPDF from './pages/SplitPDF';
 import PdfToPpt from './pages/PdfToPpt';
-import PptToPdf from './pages/PPTtoPdf';
+import PptToPdf from './pages/PptToPdf';
 import HistoryPage from './pages/HistoryPage';
 import InvoiceMaker from './pages/InvoiceMaker';
 import Layout from './components/Layout';

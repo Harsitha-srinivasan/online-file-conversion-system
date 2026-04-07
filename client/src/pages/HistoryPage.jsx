@@ -142,7 +142,7 @@ const HistoryPage = () => {
                                                         type="text"
                                                         value={editedName}
                                                         onChange={(e) => setEditedName(e.target.value)}
-                                                        className="bg-white dark:bg-slate-800 border border-indigo-500/50 rounded-lg px-3 py-1.5 text-sm font-bold text-[var(--text-main)] w-full focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
+                                                        className="bg-white border border-indigo-500/50 rounded-lg px-3 py-1.5 text-sm font-bold text-[var(--text-main)] w-full focus:outline-none focus:ring-2 focus:ring-indigo-500/20 shadow-sm"
                                                         autoFocus
                                                         onKeyDown={(e) => {
                                                             if (e.key === 'Enter') handleRename(item._id);

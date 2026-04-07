@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaPlus, FaTrash, FaFileInvoiceDollar, FaDownload, FaEye, FaArrowLeft } from 'react-icons/fa';
+import { FaPlus, FaTrash, FaFileInvoiceDollar, FaDownload, FaEye, FaArrowLeft, FaLock } from 'react-icons/fa';
 import api from '../services/api';
 import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
+import PaymentModal from '../components/PaymentModal';
 
 const InvoiceMaker = () => {
     const currencies = [
@@ -28,6 +29,9 @@ const InvoiceMaker = () => {
     });
 
     const [generating, setGenerating] = useState(false);
+    const [isPaid, setIsPaid] = useState(false);
+    const [showPayment, setShowPayment] = useState(false);
+    const [pendingAction, setPendingAction] = useState(null); // 'pdf' | 'word' | 'json' | 'view'
 
     const handleVendorChange = (e) => {
         setInvoice({ ...invoice, vendor: { ...invoice.vendor, [e.target.name]: e.target.value } });
@@ -120,6 +124,36 @@ const InvoiceMaker = () => {
         toast.success("Data exported as JSON");
     };
 
+    // Gate: downloads require payment (only once per session), but view is free
+    const requestDownload = (action) => {
+        if (action === 'view') {
+            executeAction(action);
+            return;
+        }
+        if (isPaid) {
+            executeAction(action);
+        } else {
+            setPendingAction(action);
+            setShowPayment(true);
+        }
+    };
+
+    const executeAction = (action) => {
+        if (action === 'pdf') generateInvoice(false);
+        else if (action === 'view') generateInvoice(true);
+        else if (action === 'word') downloadWord();
+        else if (action === 'json') downloadJSON();
+    };
+
+    const handlePaymentSuccess = () => {
+        setIsPaid(true);
+        toast.success('Payment successful! Your download is starting...');
+        if (pendingAction) {
+            setTimeout(() => executeAction(pendingAction), 500);
+            setPendingAction(null);
+        }
+    };
+
     return (
         <div className="max-w-6xl mx-auto px-4 pb-20">
             <motion.div
@@ -136,14 +170,23 @@ const InvoiceMaker = () => {
                         <p className="text-[var(--text-muted)] font-medium">Create professional invoices in seconds.</p>
                     </div>
                     <div className="flex flex-wrap gap-3">
+                        {isPaid ? (
+                            <span className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/10 text-green-500 rounded-full text-xs font-black uppercase tracking-widest border border-green-500/20">
+                                ✓ Unlocked
+                            </span>
+                        ) : (
+                            <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-500/10 text-amber-500 rounded-full text-xs font-black uppercase tracking-widest border border-amber-500/20">
+                                <FaLock className="text-[10px]" /> Premium: $5.00 to Download
+                            </div>
+                        )}
                         <button
-                            onClick={downloadJSON}
+                            onClick={() => requestDownload('json')}
                             className="bg-transparent text-[var(--text-main)] px-6 py-3 rounded-2xl font-black uppercase tracking-widest text-[10px] flex items-center gap-2 border border-[var(--border-color)] hover:border-indigo-300 hover:bg-indigo-50/50 dark:hover:bg-indigo-500/5 transition-all"
                         >
                             <FaDownload /> Export JSON
                         </button>
                         <button
-                            onClick={downloadWord}
+                            onClick={() => requestDownload('word')}
                             disabled={generating}
                             className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-2xl font-black uppercase tracking-widest text-[10px] flex items-center gap-2 shadow-lg shadow-blue-500/20 active:scale-95 disabled:opacity-50"
                         >
@@ -151,7 +194,7 @@ const InvoiceMaker = () => {
                             Generate Word
                         </button>
                         <button
-                            onClick={() => generateInvoice(true)}
+                            onClick={() => requestDownload('view')}
                             disabled={generating}
                             className="bg-slate-700 hover:bg-slate-800 text-white px-6 py-3 rounded-2xl font-black uppercase tracking-widest text-[10px] flex items-center gap-2 shadow-lg active:scale-95 disabled:opacity-50"
                         >
@@ -159,7 +202,7 @@ const InvoiceMaker = () => {
                             View PDF
                         </button>
                         <button
-                            onClick={() => generateInvoice(false)}
+                            onClick={() => requestDownload('pdf')}
                             disabled={generating}
                             className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-2xl font-black uppercase tracking-widest text-[10px] flex items-center gap-2 shadow-lg shadow-indigo-500/20 active:scale-95 disabled:opacity-50"
                         >
@@ -371,10 +414,10 @@ const InvoiceMaker = () => {
                                                 const selected = currencies.find(c => c.code === e.target.value);
                                                 setInvoice({ ...invoice, currency: selected });
                                             }}
-                                            className="bg-transparent border border-[var(--border-color)] rounded-lg py-1 px-2 text-sm font-black text-indigo-500 outline-none hover:border-indigo-400 transition-all cursor-pointer appearance-none text-right"
+                                            className="bg-white border border-indigo-300 rounded-lg py-1.5 px-3 text-sm font-black text-indigo-600 outline-none hover:border-indigo-400 focus:border-indigo-500 transition-all cursor-pointer shadow-sm"
                                         >
                                             {currencies.map(c => (
-                                                <option key={c.code} value={c.code} className="bg-white dark:bg-slate-800 text-[var(--text-main)]">
+                                                <option key={c.code} value={c.code} className="bg-white text-gray-800">
                                                     {c.code} ({c.symbol})
                                                 </option>
                                             ))}
@@ -390,6 +433,17 @@ const InvoiceMaker = () => {
                     </div>
                 </div>
             </div>
+
+            {/* Payment Modal */}
+            <PaymentModal
+                isOpen={showPayment}
+                onClose={() => setShowPayment(false)}
+                onSuccess={handlePaymentSuccess}
+                fileId={null}
+                fileName={`invoice_${invoice.invoiceNumber}`}
+                price={5.00}
+                featureName="Invoice Download"
+            />
         </div>
     );
 };

@@ -4,12 +4,13 @@ import { useAuth } from '../context/AuthContext';
 import api from '../services/api';
 import { toast } from 'react-toastify';
 import { FiUpload, FiFile, FiDownload, FiX, FiFileText } from 'react-icons/fi';
+import PaymentModal from '../components/PaymentModal';
 
 const PdfToPpt = () => {
     const [file, setFile] = useState(null);
     const [uploading, setUploading] = useState(false);
     const [convertedFile, setConvertedFile] = useState(null);
-    const [paying, setPaying] = useState(false);
+    const [showPayment, setShowPayment] = useState(false);
 
     const onDrop = (acceptedFiles) => {
         setFile(acceptedFiles[0]);
@@ -54,18 +55,13 @@ const PdfToPpt = () => {
         }
     };
 
-    const handlePayment = async () => {
-        if (!convertedFile?._id) return;
-        setPaying(true);
-        try {
-            await api.post(`/history/${convertedFile._id}/pay`);
-            setConvertedFile({ ...convertedFile, isPaid: true });
-            toast.success('Payment successful! You can now download your file.');
-        } catch (error) {
-            toast.error('Payment failed. Please try again.');
-        } finally {
-            setPaying(false);
-        }
+    const handlePaymentSuccess = () => {
+        setConvertedFile({ ...convertedFile, isPaid: true });
+        toast.success('Payment successful! Downloading your file...');
+        setTimeout(() => {
+            const token = encodeURIComponent(localStorage.getItem('token') || '');
+            window.open(`http://localhost:5000/api/conversion/download/${convertedFile.convertedFileName}?token=${token}`, '_blank');
+        }, 300);
     };
 
     const handleDownload = () => {
@@ -191,11 +187,11 @@ const PdfToPpt = () => {
                                 </button>
                             ) : (
                                 <button
-                                    onClick={handlePayment}
-                                    disabled={paying}
-                                    className="flex-1 flex justify-center items-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors duration-200"
+                                    onClick={() => setShowPayment(true)}
+                                    className="flex-1 flex justify-center items-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 focus:outline-none transition-all duration-200 shadow-lg shadow-indigo-500/20"
                                 >
-                                    {paying ? 'Processing...' : 'Pay $5.00 to Download'}
+                                    <FiDownload className="mr-2" />
+                                    Pay $5.00 to Download
                                 </button>
                             )}
                             <button
@@ -205,6 +201,16 @@ const PdfToPpt = () => {
                                 Convert Another
                             </button>
                         </div>
+
+                        <PaymentModal
+                            isOpen={showPayment}
+                            onClose={() => setShowPayment(false)}
+                            onSuccess={handlePaymentSuccess}
+                            fileId={convertedFile?._id}
+                            fileName={convertedFile?.convertedFileName || 'converted.pptx'}
+                            price={5.00}
+                            featureName="PDF to PPT Download"
+                        />
                     </div>
                 )}
             </div>

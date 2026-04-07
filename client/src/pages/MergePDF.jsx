@@ -18,7 +18,8 @@ const MergePDF = () => {
     const { getRootProps, getInputProps, isDragActive } = useDropzone({
         onDrop,
         accept: {
-            'application/pdf': ['.pdf']
+            'application/pdf': ['.pdf'],
+            'image/*': ['.jpg', '.jpeg', '.png', '.webp']
         },
         maxSize: 50 * 1024 * 1024 // 50MB
     });

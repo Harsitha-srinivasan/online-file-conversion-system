@@ -3,18 +3,18 @@
 @tailwind utilities;
 
 :root {
-  /* Pastel Light Theme */
-  --bg-main: #fcf9ff;
-  --bg-card: rgba(255, 255, 255, 0.7);
-  --bg-nav: rgba(255, 255, 255, 0.8);
-  --text-main: #2d3436;
-  --text-muted: #636e72;
-  --border-color: rgba(99, 110, 114, 0.1);
-  --glass-bg: rgba(255, 255, 255, 0.4);
-  --glass-border: rgba(255, 255, 255, 0.5);
-  --shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.05);
-  --primary-gradient: linear-gradient(135deg, #a8c0ff 0%, #fbc2eb 100%);
-  --secondary-gradient: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+  /* Ultra-Premium Light Theme */
+  --bg-main: #f8faff;
+  --bg-card: rgba(255, 255, 255, 0.85);
+  --bg-nav: rgba(255, 255, 255, 0.9);
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --border-color: rgba(148, 163, 184, 0.15);
+  --glass-bg: rgba(255, 255, 255, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.8);
+  --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.03), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+  --primary-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  --secondary-gradient: linear-gradient(135deg, #f43f5e 0%, #fb7185 100%);
 }
 
 .dark {

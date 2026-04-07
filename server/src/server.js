@@ -9,25 +9,29 @@ const connectDB = require('./config/db');
 dotenv.config();
 
 const startServer = async () => {
-    // Connect to database
-    await connectDB();
+    try {
+        await connectDB();
+        console.log('✅ Database connected successfully');
+    } catch (err) {
+        console.error('❌ DB connection failed:', err.message);
+        process.exit(1);
+    }
 
     const app = express();
 
     // Middleware
-    app.use(express.json()); // Body parser
-    app.use(cors()); // Enable CORS
-    app.use(helmet()); // Set security headers
-    app.use(morgan('dev')); // Request logging
+    app.use(express.json());
+    app.use(cors());
+    app.use(helmet());
+    app.use(morgan('dev'));
     app.use('/uploads', express.static('uploads'));
-    // app.use('/converted', express.static('converted')); // Moved to controller for payment checks
 
     // Basic route
     app.get('/', (req, res) => {
         res.json({ message: 'Online File Conversion API is running' });
     });
 
-    // Routes placeholders
+    // Routes
     app.use('/api/auth', require('./routes/authRoutes'));
     app.use('/api/files', require('./routes/fileRoutes'));
     app.use('/api/convert', require('./routes/conversionRoutes'));
@@ -47,10 +51,9 @@ const startServer = async () => {
 
     const PORT = process.env.PORT || 5000;
 
-    app.listen(PORT, () => {
-        console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`);
+    app.listen(PORT, '0.0.0.0', () => {
+        console.log(`✅ Server running in ${process.env.NODE_ENV} mode on port ${PORT}`);
     });
 };
 
 startServer();
-
